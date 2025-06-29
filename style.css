@@ -1,0 +1,324 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url('fonts/poppins/Poppins-Regular.ttf');
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: 'Poppins';
+	scroll-behavior: smooth;
+}
+
+/*	Common*/
+.container {
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+}
+.container:not(#header .container) {
+	padding: 10px;
+}
+.box-shadow {
+	box-shadow: 3px 3px 8px black;
+}
+.section-title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#aboutme, #myskills, 
+#myworks, #contactme, #footer {
+	margin-top: 50px;
+}
+/*	End Common*/
+
+.main-container {
+	background-color:  #34495e;
+	padding-top: 35px;
+}
+
+/*	Header Section Css*/
+#header {
+/*	border: 2px solid red;*/
+}
+
+#header .container {
+	border: 6px solid  white;
+	border-radius: 10px;
+	background-color:  #111252;
+	align-items: center;
+}
+
+#header .container .content {
+	flex-basis: 60%;
+	text-align: center;
+	line-height: 20px;
+}
+
+#header .container .content h4 {
+	letter-spacing: 5px;
+}
+
+#header .container .content h2,
+#header .container .content h4,
+#header .container .content p {
+	margin-bottom: 20px;
+}
+
+#header .container .image-div {
+	flex-basis: 40%;
+}
+
+#header .container .image-div img {
+	width: 100%;
+	border-radius: 2px;
+}
+
+.social-icons a {
+	font-size: 25px;
+	margin: 13px;
+}
+
+.social-icons .fa-youtube {
+	color:#fc0321;
+}
+
+.social-icons .fa-instagram {
+	color: pink;
+}
+
+.social-icons .fa-facebook {
+	color: blue;
+}
+
+/*	About me Css*/
+#aboutme .container {
+	align-items: center;
+}
+#aboutme .content h3 {
+	line-height: 30px;
+/*	margin-left: 10px;*/
+}
+
+#aboutme .container > div {
+/*	border: 3px solid red;*/
+	flex-basis: 50%;
+}
+
+#aboutme .image-div img {
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+
+/*	My Skills Css*/
+#myskills .container {
+	align-items: center;
+}
+#myskills .container .title-1,
+#myskills .container .title-2,
+#myskills .container .title-3 {
+	margin-top: 30px;
+}
+#myskills .container > div {
+/*	border: 2px solid red;*/
+	flex-basis: 50%;
+}
+
+#myskills .content ul {
+	list-style-type: none;
+}
+
+#myskills .content ul li {
+/*	border: 1px solid red;*/
+	border-radius: 3px;
+	display: inline-block;
+	background-color: rgba(133, 146, 158, 0.5);
+	padding: 6px 15px;
+	margin: 5px 5px 5px 0;
+	font-weight: bold;
+}
+
+#myskills .image-div img {
+	width: 100%;
+	display: block;
+	float: right;
+	border-radius: 10px;
+}
+
+/*	My Works Css*/
+#myworks .container {
+	justify-content: space-between;
+}
+
+#myworks .card h3 {
+	margin: 10px 0;
+}
+#myworks .container .card{
+/*	border: 2px solid red;*/
+	border-radius: 5px;
+	flex-basis: 30%;
+	text-align: center;
+	padding: 10px;
+	background-color:#283747;
+	cursor: pointer;
+	transition: transform 1s, background-color 1s;
+}
+#myworks .card:hover {
+	background-color: red;
+	transform: scale(1.1);
+}
+
+#myworks .card i {
+	font-size: 20px;
+}
+
+/*	Contact Me Css*/
+#contactme .container div {
+/*	border: 2px solid red;*/
+	flex-basis: 50%;
+}
+
+#contactme ul {
+	list-style-type: none;
+	line-height: 40px;
+	font-weight: bold;
+}
+#contactme .form .form-group {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+#contactme .form input, 
+#contactme .form textarea, 
+#contactme .form button {
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+#contactme .form .form-group input {
+	flex-basis: 47%;
+	height: 35px;
+	color: #000;
+}
+#contactme .form textarea {
+	width: 100%;
+	height: 100px;
+	color: #000;
+}
+#contactme .form button {
+	padding: 8px 35px;
+	float: right;
+	margin-top: 8px;
+	background-color: #0a0c9d;
+}
+
+/*	Footer CSS*/
+#footer {
+	background-color:  #111252 ;
+	padding: 35px 0 70px 0;
+}
+#footer .container {
+	justify-content: space-between;
+}
+#footer .container .column {
+	flex-basis: 35%;
+	line-height: 35px;
+	text-align: center;
+/*	border: 2px solid red;*/
+}
+#footer .column h3 {
+	margin-bottom: 25px;
+}
+#footer .column ul {
+	list-style-type: none;
+}
+#footer .column ul li a {
+	text-decoration: none;
+}
+
+#go-to-top {
+	background-color: red;
+	border-radius: 5px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+}
+
+@media (max-width:600px) {
+	.main-container {
+/*		background-color: red;*/
+	}
+
+/*		Header Section*/
+	#header .container {
+		flex-direction: column-reverse;
+		border: none;
+		border-radius: 0;
+		box-shadow: 0px 0px;
+	}
+	#header .content {
+		padding: 20px 0;
+	}
+
+/*		About Me Section*/
+	#aboutme .container{
+		flex-direction: column;
+		text-align: center;
+	}
+	#aboutme .content {
+		padding: 20px 0;
+	}
+
+/*		My Skills Section*/
+	#myskills .container{
+		flex-direction: column-reverse;
+	}
+	#myskills .content {
+		text-align: center;
+	}
+
+/*		My Works Section*/
+	#myworks .container{
+		flex-direction: column;
+	}
+	#myworks .card {
+		width: 85%;
+		margin: 15px auto;
+	}
+
+/*		Contact Me Section*/
+	#contactme .container{
+		flex-direction: column;
+	}
+	#contactme .form .form-group {
+		flex-direction: column;
+	}
+	#contactme .form .form-group input:first-child {
+		margin-bottom: 10px;
+	}
+	#contactme ul {
+	
+	}
+
+/*		Footer Section*/
+	#footer .container {
+		flex-direction: column;
+	}
+	#footer .column {
+		margin: 10px 0;
+	}
+	#footer .column h3 {
+		margin-bottom: 10px;
+	}
+}
